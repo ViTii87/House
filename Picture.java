@@ -95,4 +95,12 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * Metodo para que el sol se mueva
+     */
+    public void moveSun()
+    {
+        sun.slowMoveVertical(100);
+    }
 }
