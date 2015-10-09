@@ -17,6 +17,10 @@ public class Picture
     private Circle sun;
     private Square suelo;
     private Person paisano;
+    
+    private Person persona1;
+    private Person persona2;
+    private Person persona3;
 
     /**
      * Constructor for objects of class Picture
@@ -119,5 +123,27 @@ public class Picture
     public void movePaisanin()
     {
         paisano.slowMoveHorizontal(140);
+    }
+    
+    /**
+     * Metodo para crear tres figuras aleatorias
+     */
+    public void creaFiguras()
+    {
+        persona1 = new Person();
+        persona1.moveHorizontal(40);
+        persona1.moveVertical(30);
+        persona1.makeVisible();
+        
+        persona2 = new Person();
+        persona2.moveHorizontal(10);
+        persona2.moveVertical(30);
+        persona2.makeVisible();
+        
+        persona3 = new Person();
+        persona3.moveHorizontal(25);
+        persona3.changeColor("blue");
+        persona3.makeVisible();
+        
     }
 }
