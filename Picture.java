@@ -146,4 +146,19 @@ public class Picture
         persona3.makeVisible();
         
     }
+    
+    /**
+     * Metodo para mover las figuras
+     */
+    public void mueveFiguras()
+    {
+        if (persona1 != null) {
+        persona3.slowMoveHorizontal(40);
+        persona3.slowMoveVertical(30);
+        persona3.slowMoveHorizontal(80);
+        
+        persona1.slowMoveHorizontal(60);
+        persona2.slowMoveHorizontal(-140);
+    }
+    }
 }
