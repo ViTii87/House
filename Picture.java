@@ -69,7 +69,7 @@ public class Picture
         paisano = new Person();
         paisano.changeColor("blue");
         paisano.moveVertical(20);
-        paisano.moveHorizontal(-3000);
+        paisano.moveHorizontal(-300);
         paisano.makeVisible();
         
             
@@ -111,5 +111,13 @@ public class Picture
         sun.slowMoveVertical(100);
         setBlackAndWhite();
         suelo.changeColor("black");
+    }
+    
+    /**
+     * Metodo para hacer mover a la persona (sale de la izquierda)
+     */
+    public void movePaisanin()
+    {
+        paisano.slowMoveHorizontal(140);
     }
 }
