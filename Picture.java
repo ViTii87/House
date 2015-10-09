@@ -49,12 +49,6 @@ public class Picture
         roof.moveVertical(-60);
         roof.makeVisible();
 
-        sun = new Circle();
-        sun.changeColor("yellow");
-        sun.moveHorizontal(100);
-        sun.moveVertical(-40);
-        sun.changeSize(80);
-        sun.makeVisible();
         
         suelo = new Square();
         suelo.changeColor("green");
@@ -62,6 +56,16 @@ public class Picture
         suelo.moveVertical(125);
         suelo.moveHorizontal(-310);
         suelo.makeVisible();
+        
+        
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-40);
+        sun.changeSize(80);
+        sun.makeVisible();
+        sun.slowMoveVertical(100);
+            
     }
 
     /**
