@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Square suelo;
+    private Person paisano;
 
     /**
      * Constructor for objects of class Picture
@@ -64,6 +65,12 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        paisano = new Person();
+        paisano.changeColor("blue");
+        paisano.moveVertical(20);
+        paisano.moveHorizontal(-3000);
+        paisano.makeVisible();
         
             
     }
